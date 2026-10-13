@@ -1,0 +1,6 @@
+{
+  "name": "SF Talent Test - Telugu & English Competitive Exam Assessment",
+  "description": "Official SF Talent Test platform featuring All-India assessments, real-time results, rankings, and expert question papers curated by Abdullah Maths Faculty for National and State competitive exams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
