@@ -1,4 +1,4 @@
-export type Language = 'en' | 'te';
+export type Language = "en" | "te";
 
 export interface QuestionOption {
   id: string;
@@ -8,8 +8,8 @@ export interface QuestionOption {
 
 export interface Question {
   id: string;
-  subject: 'arithmetic' | 'reasoning' | 'gk' | 'current_affairs';
-  difficulty: 'easy' | 'medium' | 'hard';
+  subject: "arithmetic" | "reasoning" | "gk" | "current_affairs";
+  difficulty: "easy" | "medium" | "hard";
   text: {
     en: string;
     te?: string;
@@ -51,7 +51,7 @@ export interface TestSeries {
 export interface UserResponse {
   questionId: string;
   selectedOptionId: string | null;
-  status: 'answered' | 'unanswered' | 'marked' | 'marked_answered';
+  status: "answered" | "unanswered" | "marked" | "marked_answered";
   timeSpentSeconds: number;
 }
 
@@ -74,7 +74,7 @@ export interface AssessmentResult {
   accuracyPercentage: number;
   totalTimeSpentSeconds: number;
   subjectBreakdown: {
-    [key in 'arithmetic' | 'reasoning' | 'gk' | 'current_affairs']?: {
+    [key in "arithmetic" | "reasoning" | "gk" | "current_affairs"]?: {
       total: number;
       correct: number;
       incorrect: number;
@@ -83,17 +83,4 @@ export interface AssessmentResult {
   };
   responses: UserResponse[];
   rankPercentile: number;
-}
-
-export interface LeaderboardEntry {
-  id: string;
-  name: string;
-  location: string;
-  testTitle: string;
-  score: number;
-  totalMarks: number;
-  accuracy: number;
-  timeTaken: string;
-  avatarUrl?: string;
-  date: string;
 }
