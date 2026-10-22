@@ -59,8 +59,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreTests }) => {
             <div className="inline-flex items-center gap-2.5 px-4 py-3 rounded-xl bg-neutral-900/80 border border-amber-500/40 text-amber-200 font-bold text-sm md:text-base">
               <CalendarDays className="w-5 h-5 text-amber-400 shrink-0" />
               <span>
-                25 October <span className="text-neutral-500 mx-1">•</span> 6:00
-                PM
+                01 November 2026{" "}
+                <span className="text-neutral-500 mx-1">•</span> 6:00 PM
               </span>
             </div>
 
@@ -161,9 +161,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreTests }) => {
                     <span className="gold-gradient-text">MEGA ONLINE EXAM</span>
                   </h3>
                   <p className="text-xs text-neutral-300 leading-relaxed font-medium">
-                    Join Abdullah Academy on 25 October at 6:00 PM. Download the
-                    SF Talent Test app from Google Play and register to take
-                    part.
+                    Join Abdullah Academy on 01 November 2026 at 6:00 PM.
+                    Download the SF Talent Test app from Google Play and
+                    register to take part.
                   </p>
                 </div>
 

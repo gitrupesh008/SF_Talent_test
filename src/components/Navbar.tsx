@@ -37,8 +37,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
       <div className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-700 py-1.5 px-4 text-center text-xs font-bold text-black flex items-center justify-center gap-2 overflow-hidden shadow-inner">
         <Flame className="w-3.5 h-3.5 animate-bounce text-red-950 shrink-0" />
         <span className="truncate">
-          🔥 SF Talent Test Mega Online Exam • 25 October at 6:00 PM • ₹1,10,500
-          in prizes!
+          🔥 SF Talent Test Mega Online Exam • 01 November 2026 at 6:00 PM •
+          ₹1,10,500 in prizes!
         </span>
         <div className="hidden sm:inline-flex items-center gap-2">
           <a
