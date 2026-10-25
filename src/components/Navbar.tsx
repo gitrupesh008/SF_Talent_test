@@ -52,7 +52,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
         <Flame className="w-3.5 h-3.5 animate-bounce text-red-950 shrink-0" />
         <span className="truncate">
 <<<<<<< HEAD
-          🔥 SF Talent Test Mega Online Exam • 01 November 2026 at 6:00 PM •
+          🔥 SF Talent Test Mega Online Exam • 15 November 2026 at 6:00 PM •
           ₹1,10,500 in prizes!
 =======
           🔥 SF Talent Test 2025-2026 is LIVE for National (SSC, RRB, Banking) & State-Level Exams! Available on Mobile & Web!

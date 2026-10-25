@@ -114,7 +114,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="inline-flex items-center gap-2.5 px-4 py-3 rounded-xl bg-neutral-900/80 border border-amber-500/40 text-amber-200 font-bold text-sm md:text-base">
               <CalendarDays className="w-5 h-5 text-amber-400 shrink-0" />
               <span>
-                01 November 2026{" "}
+                15 November 2026{" "}
                 <span className="text-neutral-500 mx-1">•</span> 6:00 PM
               </span>
             </div>
@@ -123,8 +123,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="p-5 rounded-2xl bg-gradient-to-br from-amber-950/50 via-neutral-900/90 to-neutral-950 border-2 border-amber-500/50 shadow-xl shadow-amber-950/30 text-left">
               <div className="flex items-center gap-2 text-amber-300 font-extrabold">
                 <Trophy className="w-5 h-5" />
-                <span>Win your share of ₹1,10,500 in cash prizes!</span>
+                <span>
+                  An amazing opportunity to win over ₹1 lakh in prize money!
+                </span>
               </div>
+              <p className="text-sm text-neutral-200 mt-2">
+                A total of ₹1,10,500 is up for grabs!
+              </p>
               <div className="grid grid-cols-3 gap-2 mt-4 text-center">
                 <div className="p-3 rounded-xl bg-neutral-950/70 border border-amber-500/20">
                   <p className="text-xs text-neutral-400">1st Rank</p>
@@ -146,7 +151,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
               </div>
               <p className="text-xs md:text-sm text-neutral-300 mt-3">
-                Cash prizes also await rank holders from 13th to 25th place!
+                Substantial cash prizes are also available for ranks 13 through
+                25!
               </p>
             </div>
 
@@ -337,7 +343,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     <span className="gold-gradient-text">MEGA ONLINE EXAM</span>
                   </h3>
                   <p className="text-xs text-neutral-300 leading-relaxed font-medium">
-                    Join Abdullah Academy on 01 November 2026 at 6:00 PM.
+                    Join Abdullah Academy on 15 November 2026 at 6:00 PM.
                     Download the SF Talent Test app from Google Play and
                     register to take part.
                   </p>
@@ -352,7 +358,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     ₹1,10,500
                   </p>
                   <p className="text-xs text-neutral-400 mt-1">
-                    Top prizes plus cash rewards for ranks 13–25
+                    ₹20,000 for 1st, ₹18,000 for 2nd, ₹15,000 for 3rd, plus
+                    substantial cash prizes for ranks 13–25
                   </p>
 =======
                 {/* Subtitle Card */}
