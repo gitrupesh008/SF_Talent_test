@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Language } from '../types';
-import { TRANSLATIONS, FACEBOOK_PAGE_URL } from '../data/translations';
+import {
+  TRANSLATIONS,
+  FACEBOOK_PAGE_URL,
+  INSTAGRAM_PROFILE_URL,
+} from '../data/translations';
 import { INITIAL_STUDENT_REVIEWS, StudentReview } from '../data/studentReviews';
 import {
   Star,
@@ -11,6 +15,7 @@ import {
   PlusCircle,
   X,
   Send,
+  Instagram,
 } from 'lucide-react';
 
 interface StudentReviewsSectionProps {
@@ -130,6 +135,31 @@ export const StudentReviewsSection: React.FC<StudentReviewsSectionProps> = () =>
           >
             <ThumbsUp className="w-4 h-4 fill-white" />
             <span>{t.reviewsSection.fbFollowBtn}</span>
+          </a>
+        </div>
+
+        <div className="mb-12 p-5 sm:p-6 rounded-3xl bg-gradient-to-r from-fuchsia-950/50 via-neutral-900/90 to-orange-950/40 border border-fuchsia-500/40 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3 text-center sm:text-left">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 text-white flex items-center justify-center shrink-0">
+              <Instagram className="w-6 h-6" />
+            </div>
+            <div>
+              <h3 className="text-base sm:text-lg font-bold text-white">
+                Follow SF Talent Test on Instagram
+              </h3>
+              <p className="text-xs sm:text-sm text-neutral-300">
+                Stay connected for preparation tips, updates, and more.
+              </p>
+            </div>
+          </div>
+          <a
+            href={INSTAGRAM_PROFILE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 hover:brightness-110 text-white font-extrabold text-sm flex items-center gap-2 whitespace-nowrap transition-transform hover:-translate-y-0.5"
+          >
+            <Instagram className="w-4 h-4" />
+            <span>Follow on Instagram ↗</span>
           </a>
         </div>
 

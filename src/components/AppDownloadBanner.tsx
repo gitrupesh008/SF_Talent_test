@@ -9,6 +9,7 @@ import {
   Sparkles,
   CheckCircle2,
 } from 'lucide-react';
+import appPortalQr from '../assets/sf-app-portal-qr.png';
 
 interface AppDownloadBannerProps {
   lang?: Language;
@@ -107,7 +108,7 @@ export const AppDownloadBanner: React.FC<AppDownloadBannerProps> = () => {
                   </p>
                 </div>
 
-                {/* Simulated Stylized QR Code that links directly */}
+                {/* Official app QR code */}
                 <div className="p-4 rounded-2xl bg-white mx-auto inline-block shadow-lg border-4 border-amber-400/80">
                   <a
                     href={PLAY_STORE_APP_URL}
@@ -116,51 +117,11 @@ export const AppDownloadBanner: React.FC<AppDownloadBannerProps> = () => {
                     className="block group"
                     title="Click or Scan to Open Play Store"
                   >
-                    <svg
-                      viewBox="0 0 100 100"
-                      className="w-36 h-36 mx-auto text-black transition-transform group-hover:scale-105"
-                      fill="currentColor"
-                    >
-                      {/* Stylized QR Matrix Pattern */}
-                      <rect x="0" y="0" width="30" height="30" rx="3" />
-                      <rect x="5" y="5" width="20" height="20" fill="white" rx="2" />
-                      <rect x="10" y="10" width="10" height="10" />
-
-                      <rect x="70" y="0" width="30" height="30" rx="3" />
-                      <rect x="75" y="5" width="20" height="20" fill="white" rx="2" />
-                      <rect x="80" y="10" width="10" height="10" />
-
-                      <rect x="0" y="70" width="30" height="30" rx="3" />
-                      <rect x="5" y="75" width="20" height="20" fill="white" rx="2" />
-                      <rect x="10" y="80" width="10" height="10" />
-
-                      {/* Data dots */}
-                      <rect x="40" y="10" width="8" height="8" />
-                      <rect x="52" y="10" width="8" height="8" />
-                      <rect x="40" y="24" width="8" height="8" />
-                      <rect x="52" y="24" width="8" height="8" />
-
-                      <rect x="10" y="40" width="8" height="8" />
-                      <rect x="24" y="40" width="8" height="8" />
-                      <rect x="10" y="52" width="8" height="8" />
-                      <rect x="24" y="52" width="8" height="8" />
-
-                      <rect x="40" y="40" width="20" height="20" rx="2" fill="#D97706" />
-                      <circle cx="50" cy="50" r="5" fill="white" />
-
-                      <rect x="70" y="40" width="8" height="8" />
-                      <rect x="84" y="40" width="8" height="8" />
-                      <rect x="70" y="52" width="8" height="8" />
-                      <rect x="84" y="52" width="8" height="8" />
-
-                      <rect x="40" y="70" width="8" height="8" />
-                      <rect x="52" y="70" width="8" height="8" />
-                      <rect x="40" y="84" width="8" height="8" />
-                      <rect x="52" y="84" width="8" height="8" />
-
-                      <rect x="70" y="70" width="12" height="12" />
-                      <rect x="84" y="84" width="8" height="8" />
-                    </svg>
+                    <img
+                      src={appPortalQr}
+                      alt="Scan to open the SF Talent Test app"
+                      className="w-36 h-36 mx-auto object-contain transition-transform group-hover:scale-105"
+                    />
                   </a>
                 </div>
 

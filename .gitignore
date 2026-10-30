@@ -1,9 +1,5 @@
 node_modules/
 build/
-<<<<<<< HEAD
-=======
-dist/
->>>>>>> 5d1a04638ab87a1afae55181e6c8f23368dc9e2c
 coverage/
 .DS_Store
 *.log

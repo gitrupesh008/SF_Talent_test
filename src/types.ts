@@ -48,6 +48,17 @@ export interface TestSeries {
   featured?: boolean;
 }
 
+export interface LeaderboardEntry {
+  id: string;
+  name: string;
+  location: string;
+  testTitle: string;
+  timeTaken: string;
+  accuracy: number;
+  score: number;
+  totalMarks: number;
+}
+
 export interface UserResponse {
   questionId: string;
   selectedOptionId: string | null;

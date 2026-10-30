@@ -2,12 +2,12 @@ import React from 'react';
 import { Language } from '../types';
 import { TRANSLATIONS, PLAY_STORE_APP_URL } from '../data/translations';
 import {
-  GraduationCap,
   Sparkles,
   Smartphone,
   Star,
   Flame,
 } from 'lucide-react';
+import facultyImage from '../assets/abdullah-sir.png';
 
 interface FacultySpotlightProps {
   lang?: Language;
@@ -30,25 +30,26 @@ export const FacultySpotlight: React.FC<FacultySpotlightProps> = () => {
               <div className="relative">
                 {/* Outer frame */}
                 <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl p-2 bg-gradient-to-tr from-amber-600 via-amber-300 to-yellow-500 shadow-2xl shadow-amber-500/30 rotate-1 group">
-                  <div className="w-full h-full rounded-2xl bg-neutral-950 flex flex-col items-center justify-center p-4 text-center border border-amber-400/40 relative overflow-hidden">
-                    {/* Faculty Avatar / Badge illustration */}
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center text-black mb-3 shadow-inner">
-                      <GraduationCap className="w-14 h-14" />
-                    </div>
-
-                    <h4 className="text-xl font-black text-white">
-                      Abdullah Sir
-                    </h4>
-                    <p className="text-xs text-amber-300 font-bold uppercase tracking-wider mt-0.5">
-                      Senior Mathematics & Aptitude Faculty
-                    </p>
-                    <p className="text-[11px] text-neutral-400 mt-1">
-                      15+ Years Mentoring All-India & State Exam Aspirants
-                    </p>
-                  </div>
+                  <img
+                    src={facultyImage}
+                    alt="Abdullah Sir, Senior Mathematics and Aptitude Faculty"
+                    className="w-full h-full rounded-2xl bg-white object-contain"
+                  />
                 </div>
 
-                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-500 text-black font-extrabold text-xs shadow-lg uppercase tracking-wider whitespace-nowrap flex items-center gap-1.5">
+                <div className="mt-4 text-center">
+                  <h4 className="text-xl font-black text-white">
+                    Abdullah Sir
+                  </h4>
+                  <p className="text-xs text-amber-300 font-bold uppercase tracking-wider mt-0.5">
+                    Senior Mathematics & Aptitude Faculty
+                  </p>
+                  <p className="text-[11px] text-neutral-400 mt-1">
+                    15+ Years Mentoring All-India & State Exam Aspirants
+                  </p>
+                </div>
+
+                <div className="mt-3 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-500 text-black font-extrabold text-xs shadow-lg uppercase tracking-wider whitespace-nowrap flex items-center gap-1.5">
                   <Flame className="w-3.5 h-3.5 fill-black" />
                   <span>National & State Exam Mentor</span>
                 </div>
